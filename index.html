@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <ul class="navbar navbar-light bg-dark justify-content-center font-weight-bold text-light">
+        <li class="nav-item">
+        Infix-Postfix-Prefix Conversion
+        </li>
+      </ul>
+    
+    <div class="container">
+        <div class="inputbox" id="infix">
+            <input onkeydown="return /[a-z\/()\+\-\^\*{}]/i.test(event.key)" type="text" placeholder="Enter your Infix Expression here without any commas" id="myInput" required>
+        </div>
+    </div>
+
+    <div class="container secondContainer d-flex justify-content-around">
+        <div id="postfix">
+            <button type="button" class="btn btn-outline-secondary" id="postfix">Get Postfix </button>
+        </div>
+        <div id="prefix">
+            <button type="button" class="btn btn-outline-secondary" id="prefix">Get Prefix</button>
+        </div>
+    </div>
+
+    <div class="output d-flex justify-content-around">
+        <div id="postfixOutput">
+           <label for="" hidden id="postfixLabel"></label> 
+        </div>
+        <div id="prefixOutput">
+            <label for="" hidden id="prefixLabel"></label> 
+        </div>
+    </div>
+</body>
+<script src="file.js"></script>
+</html>
